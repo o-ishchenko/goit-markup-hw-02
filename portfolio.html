@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Портфолио</title>
 </head>
 
 <body>
     <!-- Верхняя линия-->
-    <header>
-        <nav>
-            <a href="" lang="en">WebStudio</a>
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="" lang="en" class="logo"><span>Web</span>Studio</a>
+            <ul class="header-nav-list">
+                <li><a href="./index.html" class="header-nav-item">Студия</a></li>
+                <li><a href="./portfolio.html" class="header-nav-item">Портфолио</a></li>
+                <li><a href="" class="header-nav-item">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="header-contacts-list">
+            <li><a href="mailto:info@devstudio.com" class="header-contacts-item">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="header-contacts-item">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <main>
@@ -39,49 +44,58 @@
             <!-- Проекты портфолио -->
             <ul>
                 <li>
-                    <a href=""><img src="./images/technokryak.jpg" alt="Веб-сайт компании Технокряк"></a>
+                    <a href=""><img src="./images/technokryak.jpg" alt="Веб-сайт компании Технокряк" width=370>
                     <h2>Технокряк</h2>
                     <p>Веб-сайт</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/new-orlean.jpg" alt="Постер с двумя баскетболистами"></a>
+                    <a href=""><img src="./images/new-orlean.jpg" alt="Постер с двумя баскетболистами" width=370>
                     <h2>Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
                     <p>Дизайн</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/seafood.jpg" alt="Логотип ресторана Seafood"></a>
+                    <a href=""><img src="./images/seafood.jpg" alt="Логотип ресторана Seafood" width=370>
                     <h2>Ресторан <span lang="en">Seafood</span> </h2>
                     <p>Приложение</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/project-prime.jpg" alt="Черные наушники"></a>
+                    <a href=""><img src="./images/project-prime.jpg" alt="Черные наушники" width=370>
                     <h2>Проект <span lang="en">Prime</span> </h2>
                     <p>Маркетинг</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/project-boxes.jpg " alt="Две коробки"></a>
+                    <a href=""><img src="./images/project-boxes.jpg " alt="Две коробки" width=370>
                     <h2>Проект <span lang="en">Boxes</span> </h2>
                     <p>Приложение</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/inspiration-has-no-borders.jpg" alt="Веб-сайт компании Inspiration has no Borders"></a>
+                    <a href=""><img src="./images/inspiration-has-no-borders.jpg" alt="Веб-сайт компании Inspiration has no Borders" width=370>
                     <h2 lang="en">Inspiration has no Borders</h2>
                     <p>Веб-сайт</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/limited-edition.jpg" alt="Открытый журнал"></a>
+                    <a href=""><img src="./images/limited-edition.jpg" alt="Открытый журнал" width=370>
                     <h2>Издание <span lang="en">Limited Edition</span> </h2>
                     <p>Дизайн</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/project-lab.jpg" alt="Картонная бирка с шнурком"></a>
+                    <a href=""><img src="./images/project-lab.jpg" alt="Картонная бирка с шнурком" width=370>
                     <h2>Проект <span lang="en">LAB</span> </h2>
                     <p>Маркетинг</p>
+                    </a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/growing-business.jpg" alt="Ноутбук с открытым приложением Growing Business"></a>
+                    <a href=""><img src="./images/growing-business.jpg" alt="Ноутбук с открытым приложением Growing Business">
                     <h2 lang="en">Growing Business</h2>
                     <p>Приложение</p>
+                    </a>
                 </li>
                
             </ul>
@@ -89,18 +103,18 @@
         </Section>
     </main>
     <!--Подвал-->
-    <footer>
-        <a href="" lang="en">WebStudio</a>
+    <footer class="footer">
+        <a href="" lang="en" class="logo"><span>Web</span>Studio</a>
         <address>
-            <ul>
+            <ul class="address-list">
                 <li>
-                    <p>г. Киев, пр-т Леси Украинки, 26</p>
+                    <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
-                <li><a href="mailto:info@example.com">info@example.com </a></li>
-                <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <li><a href="mailto:info@example.com" class="address-item">info@example.com </a></li>
+                <li><a href="tel:+380991111111" class="address-item">+38 099 111 11 11</a></li>
             </ul>
         </address>
-
+    
     </footer>
 </body>
 
