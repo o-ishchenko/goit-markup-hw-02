@@ -4,7 +4,7 @@
 /* основной белый цвет #ffffff */
 /* темный фон #2F303A */
 /* светло-серый фон #F5F4FA */
-/* фон всей страницы #E5E5E5 */
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -15,24 +15,22 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #e5e5e5;
   color: var(--primary-text-color);
 }
-ul {
+.list {
   list-style: none;
 }
-/* Верхняя линия*/
-.header {
-  background-color: var(--primary-white-color);
+.link {
+  text-decoration: none;
 }
+/* Верхняя линия*/
 .logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .logo > span {
@@ -44,9 +42,8 @@ ul {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .header-contacts-item {
@@ -56,7 +53,8 @@ ul {
 .header-nav-item:hover,
 .header-nav-item:focus,
 .header-contacts-item:hover,
-.header-contacts-item:focus {
+.header-contacts-item:focus,
+.header-nav-item.current {
   color: var(--accent-color);
 }
 
@@ -69,22 +67,18 @@ ul {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero-btn {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 .hero-btn:focus,
 .hero-btn:hover {
@@ -92,39 +86,33 @@ ul {
 }
 
 /* Особенности */
-.specifics {
-  background-color: var(--primary-white-color);
-}
+
 .secondary-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* Временный вариант скрыть заголовок */
+/* Временный вариант скрыть заголовок, которого нет на макете */
 .specifics > .secondary-title {
   color: var(--primary-white-color);
 }
 
-.specifics-title-item {
-  font-weight: bold;
+.specifics-title {
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.specifics-text-item {
+.specifics-text {
+  color: var(--secondary-text-color);
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-/* Чем мы занимаемся */
-.what-we-do {
-  background-color: var(--primary-white-color);
 }
 
 /* наша команда */
@@ -136,30 +124,64 @@ ul {
 .team-list-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .team-list-text {
-  font-weight: normal;
+  font-weight: 400;
   color: var(--secondary-text-color);
 }
 
+/* Портфолио */
+
+/* Временный вариант скрыть заголовок, которого нет на макете */
+.portfolio-title {
+  color: var(--primary-white-color);
+}
+.portfolio-btn {
+  background-color: var(--lightgray-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-btn:focus,
+.portfolio-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.portfolio-list-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-list-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
 /* Подвал */
 .footer {
   background-color: var(--dark-bg-color);
 }
+.logo-footer {
+  color: var(--primary-white-color);
+}
 .address-list {
-  list-style: none;
   color: var(--primary-white-color);
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .address-item {
-  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
